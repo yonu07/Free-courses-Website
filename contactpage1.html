@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Courses Library - Contact</title>
     <style>
-           body {
-            font-size: 15px;
+                /* Default styles for all screen sizes */
+        body {
+            font-size: 12px;
         }
 
         /* Media query for screens with a maximum width of 600px */
         @media only screen and (max-width: 600px) {
             /* Styles for screens smaller than 600px */
             body {
-                font-size: 10px;
+                font-size: 12px;
             }
         }
+
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('home1.jpg'); 
+            background-image: url('coursespage0.jpg'); 
             background-size: cover;
         }
 
@@ -41,14 +43,14 @@
             padding: 1em;
             margin-left: 30px;
             text-decoration: none;
-            padding: 5px 10px;
+            padding: 15px 30px;
             border: 1px solid #333;
             border-radius: 5px;
             transition: background-color 0.3s , padding 0.6s ;
         }
 
         .link1:hover {
-          background-color: #b406f8;
+          background-color: #432E8C;
             color: black;
             padding: 15px 20px;
         }
@@ -60,14 +62,14 @@
              padding: 1em;
              margin-left: 30px;
             text-decoration: none;
-            padding: 5px 10px;
+            padding: 15px 30px;
             border: 1px solid #333;
             border-radius: 5px;
             transition: background-color 0.3s , padding 0.6s ;
         }
 
         .link2:hover {
-            background-color: #b406f8;
+            background-color: #432E8C;
             color: black;
             padding: 15px 20px;
         }
@@ -80,14 +82,14 @@
             padding: 1em;
             margin-left: 30px;
             text-decoration: none;
-            padding: 5px 10px;
+            padding: 15px 30px;
             border: 1px solid #333;
             border-radius: 5px;
             transition: background-color 0.3s , padding 0.6s ;
         }
 
         .link3:hover {
-          background-color: #b406f8;
+          background-color: #432E8C;
             color: black;
             padding: 15px 20px;
         }
@@ -105,7 +107,7 @@
 
         .contact-form {
             flex: 1;
-            color: #b406f8;
+            color: #ab94ff;
             background-color: rgba(161, 148, 148, 0.3);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
@@ -128,7 +130,7 @@
         }
 
         button {
-            background-color: #d331e2;
+            background-color: #ab94ff;
             color: #fff;
             padding: 10px 20px;
             border: none;
@@ -138,7 +140,7 @@
         }
 
         button:hover {
-            background-color: #b406f8;
+            background-color: #432E8C;
             width: 100px;
             padding: 15px;
             
@@ -149,12 +151,12 @@
             flex: 1;
             padding: 20px;
             background-color: rgba(199, 158, 158, 0.3);
-            color: #b406f8;
+            color: #ab94ff;
             border-radius: 10px;
         }
 
         footer {
-            background-color: #333;
+            background-color: rgba(199, 158, 158, 0.3);
             color: #fff;
             text-align: center;
             padding: 10px;
@@ -169,13 +171,13 @@
       <h1><strong><em>Courses Library-Contact</em></strong></h1> 
       <nav>
         <ul>
-          <li><a class=link1 href="index.html">Home</a></li>
+          <li><a class=link1 href="homepage.html">Home</a></li>
           <li><a class=link2 href="free-courses-library.html">courses</a></li>
           <li><a class=link3 href="contactpage1.html">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="container">
+    <div class="container"> 
         <div class="side-text">
             <h2>Welcome to Our Courses Library!</h2>
             <h3><strong><em>Explore a variety of free courses in different domains and enhance your knowledge. If you have any questions or feedback, feel free to reach out using the contact form on the right.</em></strong></h3>
@@ -183,7 +185,7 @@
 
         <div class="contact-form">
             <h2>Contact Us</h2>
-             <form action="https://formsubmit.co/e067c05628ac7d36763ed64502494e25" method="post">
+            <form action="process_contact.php" method="post">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -193,7 +195,7 @@
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit" value="submit">Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </div>
