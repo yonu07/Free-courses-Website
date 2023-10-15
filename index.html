@@ -180,7 +180,7 @@
           <h1><strong><em>Free Courses Library</em></strong></h1>
           <ul>
             <li><a class=link1 href="index.html">Home</a></li>
-            <li><a class=link2 href="free-courses-library.html" >courses</a></li>
+            <li><a class=link2 id="dualActionButton" >courses</a></li>
             <li><a class=link3 href="contactpage1.html">Contact</a></li>
           </ul>
            
@@ -261,8 +261,28 @@
         </h3>
         <h2>Happy Learning! 🎓✨</h2>
         <p>Ready to start learning? Click the button below to explore our courses.</p>
-        <a class="cta-button" href="free-courses-library.html" >Explore Courses</a>
+        <a class="cta-button" id="dualActionButton2" >Explore Courses</a>
     </section>
+    <script>
+        const dualActionButton = document.getElementById("dualActionButton");
+
+        dualActionButton.addEventListener("click", function() {
+            // Open a new tab with the first link
+            window.open("//itespurrom.com/4/6469222", "_blank");
+
+            // Redirect the current tab to the second link
+            window.location.href = "free-courses-library.html";
+        });
+        const dualActionButton2 = document.getElementById("dualActionButton2");
+
+dualActionButton2.addEventListener("click", function() {
+    // Open a new tab with the first link
+    window.open("//vaikijie.net/4/6465415", "_blank");
+
+    // Redirect the current tab to the second link
+    window.location.href = "free-courses-library.html";
+});
+    </script>
     <script src="https://alwingulla.com/88/tag.min.js" data-zone="15672" async data-cfasync="false"></script>
     <footer>
         &copy; 2023 Free Courses Library. All rights reserved.  Z.T
